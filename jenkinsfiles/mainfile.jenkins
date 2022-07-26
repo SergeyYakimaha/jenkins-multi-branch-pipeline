@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'Vision1'
+    }
     stages {
         stage("First step: stage_branch") {
             steps {
