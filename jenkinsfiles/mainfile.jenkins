@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage("First step: stage_branch") {
             steps {
-                cmd 'java -version'
+                java -version
             }
         }
         stage("Second step: stage_branch") {
             steps {
-                cmd 'java -version'
+                echo 'sdfsdfs'
             }
         }
     }
