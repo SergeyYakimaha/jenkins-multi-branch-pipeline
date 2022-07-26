@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage("First step: main_branch") {
+            steps {
+                cmd 'java -version'
+            }
+        }
+        stage("Second step: main_branch") {
+            steps {
+                cmd 'java -version'
+            }
+        }
+    }
+}
