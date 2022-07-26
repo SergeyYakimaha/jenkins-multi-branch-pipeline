@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("First step: stage_branch") {
             steps {
-                java -version
+                sh java -version
             }
         }
         stage("Second step: stage_branch") {
