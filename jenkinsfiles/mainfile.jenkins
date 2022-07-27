@@ -12,6 +12,7 @@ pipeline {
         stage("Second step: dev_branch") {
             steps {
                 bat('java -version')
+                bat('java -version')
             }
         }
     }
